@@ -12,6 +12,8 @@ const sqlEncrypt = process.env.ENCRYPT === "true";
 assert(PORT, 'PORT is required');
 assert(HOST, 'HOST is required');
 
+console.log(PORT, HOST, HOST_URL, SQL_USER, SQL_PASSWORD, SQL_DATABASE, SQL_SERVER)
+
 module.exports = {
     port: PORT,
     host: HOST,

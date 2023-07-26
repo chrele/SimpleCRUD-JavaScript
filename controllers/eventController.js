@@ -21,7 +21,7 @@ const getEvent = async (req, res, next) => {
     }
 }
 
-const createEvent = async (req, res, next) => {
+const addEvent = async (req, res, next) => {
     try {
         const data = req.body;
         const created = await eventData.createEvent(data);
@@ -55,7 +55,7 @@ const deleteEvent = async (req, res, next) => {
 module.exports = {
     getEvents,
     getEvent,
-    createEvent,
+    addEvent,
     updateEvent,
     deleteEvent
 }

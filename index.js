@@ -11,6 +11,6 @@ const app = express();
 app.use(cors());
 app.use(bodyParser.json());
 
-app.use('./api', eventRoutes.routes);
+app.use('/api', eventRoutes.routes);
 
 app.listen(config.port, () => console.log('Server is listening on ' + config.host + ':' + config.port));
